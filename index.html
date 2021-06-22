@@ -321,7 +321,7 @@
         </div>
 
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
-          <div class="row">
+          <div class="row justify-content-center">
             <div class="col-md-5 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
@@ -337,17 +337,22 @@
             </div>
           </div>
           --------------------------------------------------------->
-          <div class="row">
-            <div class="col-md-5 form-group mt-3">
+          <div class="row justify-content-center">
+            <div class="col-md-3 form-group mt-3">
               <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Contact Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
 
 
 
-            <div class="col-md-5 form-group mt-3">
+            <div class="col-md-3 form-group mt-3">
              
-              <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date    (dd/mm/yyyy)" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date (dd/mm/yyyy)" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            
+            <div class="col-md-3 form-group mt-3 ">
+              <input type="time" class="form-control" name="time" id="time" placeholder="time" data-rule="time" data-msg="Please enter a valid time">
               <div class="validate"></div>
             </div>
 <!--------------------------------------------------
