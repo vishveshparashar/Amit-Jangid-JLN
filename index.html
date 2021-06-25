@@ -322,14 +322,20 @@
 
         <form action="forms/appointment.php" method="post" role="form" class="php-email-form">
           <div class="row justify-content-center">
-            <div class="col-md-5 form-group">
+            <div class="col-md-4 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
-            <div class="col-md-5 form-group mt-3 mt-md-0">
+            <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
               <div class="validate"></div>
             </div>
+
+            <div class="col-md-4 form-group mt-3 mt-md-0">
+              <input type="date" class="form-control" name="date of birth" id="DOB" placeholder="Date Of Birth" data-rule="DOB" data-msg="Please enter a valid DOB">
+              <div class="validate"></div>
+            </div>
+
             <!--------------
             <div class="col-md-4 form-group mt-3 mt-md-0">
               <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -338,21 +344,21 @@
           </div>
           --------------------------------------------------------->
           <div class="row justify-content-center">
-            <div class="col-md-3 form-group mt-3">
-              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Contact Number" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+            <div class="col-md-4 form-group mt-3">
+              <input type="datetime" name="contact" class="form-control datepicker" id="Contact Number" placeholder="Contact Number" data-rule="Contact Number" data-msg="Please enter valid number">
               <div class="validate"></div>
             </div>
 
 
 
-            <div class="col-md-3 form-group mt-3">
+            <div class="col-md-4 form-group mt-3">
              
               <input type="date" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date (dd/mm/yyyy)" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             
-            <div class="col-md-3 form-group mt-3 ">
-              <input type="time" class="form-control" name="time" id="time" placeholder="time" data-rule="time" data-msg="Please enter a valid time">
+            <div class="col-md-4 form-group mt-3 ">
+              <input type="time" name="time" class="form-control datepicker" id="time" placeholder="time" data-rule="time" data-msg="Please enter a valid time">
               <div class="validate"></div>
             </div>
 <!--------------------------------------------------
@@ -368,7 +374,7 @@
           </div>
         ------------------------------------------------------------------------------------------>
           <div class="col-md-9 form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message "></textarea>
+            <textarea class="form-control" name="message" rows="7" placeholder="Message "></textarea>
             <div class="validate"></div>
           </div>
           <div class="mb-3">
